@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Heater",
+					"strict" : false
+				},
+				{
+					"name" : "ReliefValve",
+					"strict" : false
+				},
+				{
+					"name" : "Siren",
+					"strict" : false
+				},
+				{
+					"name" : "EStop",
+					"strict" : false
+				},
+				{
+					"name" : "VatFull",
+					"strict" : false
+				},
+				{
+					"name" : "VatEmpty",
+					"strict" : false
+				},
+				{
+					"name" : "PressureHigh",
+					"strict" : false
+				},
+				{
+					"name" : "Temp_High",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

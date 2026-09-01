@@ -1,0 +1,18 @@
+|Lab1
+Heater <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+EStop => inst2.IN0
+EStop => inst17.IN0
+EStop => inst19.IN1
+VatFull => inst3.IN0
+VatFull => inst20.IN1
+VatEmpty => inst3.IN1
+VatEmpty => inst7.IN0
+PressureHigh => inst5.IN0
+Temp_High => inst5.IN1
+Chiller <= <GND>
+Mixer <= <GND>
+ReliefValve <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Siren <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+LidOpen => ~NO_FANOUT~
+
+
