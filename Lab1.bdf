@@ -229,7 +229,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 528 -40 576 -8)
+	(rect 528 -48 576 -16)
 	(text "NOT" (rect 1 0 21 9)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 21 25 33)(font "Intel Clear" ))
 	(port
@@ -254,7 +254,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 400 128 464 176)
+	(rect 392 128 456 176)
 	(text "AND2" (rect 1 0 25 9)(font "Arial" (font_size 6)))
 	(text "inst3" (rect 3 37 25 49)(font "Intel Clear" ))
 	(port
@@ -857,30 +857,6 @@ on the Quartus Prime software download page.
 	)
 )
 (connector
-	(pt 528 -24)
-	(pt 536 -24)
-)
-(connector
-	(text "EStop" (rect 444 -48 471 -36)(font "Intel Clear" ))
-	(pt 424 -24)
-	(pt 528 -24)
-)
-(connector
-	(text "VatFull" (rect 336 128 371 140)(font "Intel Clear" ))
-	(pt 400 144)
-	(pt 328 144)
-)
-(connector
-	(text "VatEmpty" (rect 344 144 391 156)(font "Intel Clear" ))
-	(pt 400 160)
-	(pt 336 160)
-)
-(connector
-	(text "FailedLevelSensors" (rect 465 136 558 148)(font "Intel Clear" ))
-	(pt 464 152)
-	(pt 504 152)
-)
-(connector
 	(text "FailedLevelSensors" (rect 432 -24 525 -12)(font "Intel Clear" ))
 	(pt 528 -8)
 	(pt 464 -8)
@@ -1148,10 +1124,6 @@ on the Quartus Prime software download page.
 	(pt 504 40)
 )
 (connector
-	(pt 576 -24)
-	(pt 600 -24)
-)
-(connector
 	(pt 568 8)
 	(pt 600 8)
 )
@@ -1200,7 +1172,43 @@ on the Quartus Prime software download page.
 	(pt 688 0)
 	(pt 688 16)
 )
-(junction (pt 528 -24))
+(connector
+	(text "VatFull" (rect 328 128 363 140)(font "Intel Clear" ))
+	(pt 392 144)
+	(pt 320 144)
+)
+(connector
+	(text "VatEmpty" (rect 336 144 383 156)(font "Intel Clear" ))
+	(pt 392 160)
+	(pt 328 160)
+)
+(connector
+	(text "FailedLevelSensors" (rect 457 136 550 148)(font "Intel Clear" ))
+	(pt 456 152)
+	(pt 496 152)
+)
+(connector
+	(pt 592 -24)
+	(pt 592 -32)
+)
+(connector
+	(pt 600 -24)
+	(pt 592 -24)
+)
+(connector
+	(pt 592 -32)
+	(pt 576 -32)
+)
+(connector
+	(text "EStop" (rect 444 -56 471 -44)(font "Intel Clear" ))
+	(pt 424 -32)
+	(pt 528 -32)
+)
+(connector
+	(pt 528 -32)
+	(pt 536 -32)
+)
 (junction (pt 856 232))
 (junction (pt 744 672))
 (junction (pt 600 24))
+(junction (pt 528 -32))

@@ -1,0 +1,297 @@
+// Copyright (C) 2025  Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Altera and sold by Altera or its authorized distributors.  Please
+// refer to the Altera Software License Subscription Agreements 
+// on the Quartus Prime software download page.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
+
+// DATE "09/01/2026 18:04:39"
+
+// 
+// Device: Altera 5CSXFC6D6F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Lab1 (
+	Heater,
+	EStop,
+	VatFull,
+	VatEmpty,
+	PressureHigh,
+	Temp_High,
+	Chiller,
+	Mixer,
+	ReliefValve,
+	Siren,
+	LidOpen);
+output 	Heater;
+input 	EStop;
+input 	VatFull;
+input 	VatEmpty;
+input 	PressureHigh;
+input 	Temp_High;
+output 	Chiller;
+output 	Mixer;
+output 	ReliefValve;
+output 	Siren;
+input 	LidOpen;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \LidOpen~input_o ;
+wire \Heater~output_o ;
+wire \Chiller~output_o ;
+wire \Mixer~output_o ;
+wire \ReliefValve~output_o ;
+wire \Siren~output_o ;
+wire \EStop~input_o ;
+wire \VatFull~input_o ;
+wire \VatEmpty~input_o ;
+wire \PressureHigh~input_o ;
+wire \Temp_High~input_o ;
+wire \inst20~0_combout ;
+wire \inst15~0_combout ;
+wire \inst19~combout ;
+
+
+cyclonev_io_obuf \Heater~output (
+	.i(\inst20~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Heater~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Heater~output .bus_hold = "false";
+defparam \Heater~output .open_drain_output = "false";
+defparam \Heater~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Chiller~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Chiller~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Chiller~output .bus_hold = "false";
+defparam \Chiller~output .open_drain_output = "false";
+defparam \Chiller~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Mixer~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Mixer~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Mixer~output .bus_hold = "false";
+defparam \Mixer~output .open_drain_output = "false";
+defparam \Mixer~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \ReliefValve~output (
+	.i(\inst15~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ReliefValve~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ReliefValve~output .bus_hold = "false";
+defparam \ReliefValve~output .open_drain_output = "false";
+defparam \ReliefValve~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Siren~output (
+	.i(\inst19~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Siren~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Siren~output .bus_hold = "false";
+defparam \Siren~output .open_drain_output = "false";
+defparam \Siren~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \EStop~input (
+	.i(EStop),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\EStop~input_o ));
+// synopsys translate_off
+defparam \EStop~input .bus_hold = "false";
+defparam \EStop~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \VatFull~input (
+	.i(VatFull),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\VatFull~input_o ));
+// synopsys translate_off
+defparam \VatFull~input .bus_hold = "false";
+defparam \VatFull~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \VatEmpty~input (
+	.i(VatEmpty),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\VatEmpty~input_o ));
+// synopsys translate_off
+defparam \VatEmpty~input .bus_hold = "false";
+defparam \VatEmpty~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \PressureHigh~input (
+	.i(PressureHigh),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\PressureHigh~input_o ));
+// synopsys translate_off
+defparam \PressureHigh~input .bus_hold = "false";
+defparam \PressureHigh~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \Temp_High~input (
+	.i(Temp_High),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Temp_High~input_o ));
+// synopsys translate_off
+defparam \Temp_High~input .bus_hold = "false";
+defparam \Temp_High~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst20~0 (
+// Equation(s):
+// \inst20~0_combout  = ( \Temp_High~input_o  & ( (!\EStop~input_o  & (\VatFull~input_o  & (!\VatEmpty~input_o  & !\PressureHigh~input_o ))) ) ) # ( !\Temp_High~input_o  & ( (!\EStop~input_o  & (\VatFull~input_o  & !\VatEmpty~input_o )) ) )
+
+	.dataa(!\EStop~input_o ),
+	.datab(!\VatFull~input_o ),
+	.datac(!\VatEmpty~input_o ),
+	.datad(!\PressureHigh~input_o ),
+	.datae(!\Temp_High~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst20~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst20~0 .extended_lut = "off";
+defparam \inst20~0 .lut_mask = 64'h2020200020202000;
+defparam \inst20~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst15~0 (
+// Equation(s):
+// \inst15~0_combout  = ( \Temp_High~input_o  & ( (!\EStop~input_o  & ((!\VatFull~input_o ) # ((!\VatEmpty~input_o ) # (\PressureHigh~input_o )))) ) ) # ( !\Temp_High~input_o  & ( (!\EStop~input_o  & ((!\VatFull~input_o ) # (!\VatEmpty~input_o ))) ) )
+
+	.dataa(!\EStop~input_o ),
+	.datab(!\VatFull~input_o ),
+	.datac(!\VatEmpty~input_o ),
+	.datad(!\PressureHigh~input_o ),
+	.datae(!\Temp_High~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst15~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst15~0 .extended_lut = "off";
+defparam \inst15~0 .lut_mask = 64'hA8A8A8AAA8A8A8AA;
+defparam \inst15~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb inst19(
+// Equation(s):
+// \inst19~combout  = ((\VatFull~input_o  & \VatEmpty~input_o )) # (\EStop~input_o )
+
+	.dataa(!\EStop~input_o ),
+	.datab(!\VatFull~input_o ),
+	.datac(!\VatEmpty~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst19~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam inst19.extended_lut = "off";
+defparam inst19.lut_mask = 64'h5757575757575757;
+defparam inst19.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \LidOpen~input (
+	.i(LidOpen),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\LidOpen~input_o ));
+// synopsys translate_off
+defparam \LidOpen~input .bus_hold = "false";
+defparam \LidOpen~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign Heater = \Heater~output_o ;
+
+assign Chiller = \Chiller~output_o ;
+
+assign Mixer = \Mixer~output_o ;
+
+assign ReliefValve = \ReliefValve~output_o ;
+
+assign Siren = \Siren~output_o ;
+
+endmodule

@@ -1,5 +1,5 @@
 Flow report for Lab1
-Tue Sep  1 17:36:30 2026
+Tue Sep  1 18:04:39 2026
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep  1 17:36:30 2026           ;
+; Flow Status                     ; Successful - Tue Sep  1 18:04:39 2026           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; Lab1                                            ;
 ; Top-level Entity Name           ; Lab1                                            ;
@@ -99,7 +99,15 @@ on the Quartus Prime software download page.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4867 MB             ; 00:00:18                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:18                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4774 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4774 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4774 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4774 MB             ; 00:00:01                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,6 +117,14 @@ on the Quartus Prime software download page.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ece-ccb018-30    ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -116,6 +132,14 @@ on the Quartus Prime software download page.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1 -c Lab1 --vector_source=C:/Users/csaunders42/Documents/ece2031/Waveform.vwf --testbench_file=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/ Lab1 -c Lab1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1 -c Lab1 --vector_source=C:/Users/csaunders42/Documents/ece2031/Waveform.vwf --testbench_file=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/ Lab1 -c Lab1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1 -c Lab1 --vector_source=C:/Users/csaunders42/Documents/ece2031/Waveform.vwf --testbench_file=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/ Lab1 -c Lab1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1 -c Lab1 --vector_source=C:/Users/csaunders42/Documents/ece2031/Waveform.vwf --testbench_file=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/csaunders42/Documents/ece2031/simulation/qsim/ Lab1 -c Lab1
 
 
 
