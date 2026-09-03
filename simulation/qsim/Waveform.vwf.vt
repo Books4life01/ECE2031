@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/01/2026 18:04:38"
+// Generated on "09/03/2026 10:37:16"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Lab1
 // 
@@ -63,6 +63,12 @@ begin
 #1000000 $finish;
 end 
 
+// PressureHigh
+initial
+begin
+	PressureHigh = 1'b0;
+end 
+
 // EStop
 initial
 begin
@@ -73,12 +79,6 @@ end
 initial
 begin
 	LidOpen = 1'b0;
-end 
-
-// PressureHigh
-initial
-begin
-	PressureHigh = 1'b0;
 end 
 
 // Temp_High
@@ -96,7 +96,7 @@ end
 // VatFull
 initial
 begin
-	VatFull = 1'b0;
+	VatFull = 1'b1;
 end 
 endmodule
 

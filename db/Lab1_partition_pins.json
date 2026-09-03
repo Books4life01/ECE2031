@@ -8,6 +8,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "Chiller",
+					"strict" : false
+				},
+				{
+					"name" : "Mixer",
+					"strict" : false
+				},
+				{
 					"name" : "ReliefValve",
 					"strict" : false
 				},
@@ -25,6 +33,10 @@
 				},
 				{
 					"name" : "VatEmpty",
+					"strict" : false
+				},
+				{
+					"name" : "LidOpen",
 					"strict" : false
 				},
 				{

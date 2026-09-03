@@ -1,32 +1,32 @@
 # do Lab1.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:04:41 on Sep 01,2026
+# Start time: 10:57:03 on Sep 03,2026
 # vlog -work work Lab1.vo 
 # -- Compiling module Lab1
 # 
 # Top level modules:
 # 	Lab1
-# End time: 18:04:41 on Sep 01,2026, Elapsed time: 0:00:00
+# End time: 10:57:03 on Sep 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:04:41 on Sep 01,2026
-# vlog -work work Waveform.vwf.vt 
+# Start time: 10:57:03 on Sep 03,2026
+# vlog -work work alltests.vwf.vt 
 # -- Compiling module Lab1_vlg_vec_tst
 # 
 # Top level modules:
 # 	Lab1_vlg_vec_tst
-# End time: 18:04:41 on Sep 01,2026, Elapsed time: 0:00:00
+# End time: 10:57:03 on Sep 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Lab1_vlg_vec_tst 
-# Start time: 18:04:41 on Sep 01,2026
+# Start time: 10:57:03 on Sep 03,2026
 # Loading work.Lab1_vlg_vec_tst
 # Loading work.Lab1
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
 # Loading cyclonev_ver.cyclonev_lcell_comb
 # after#25
-# ** Note: $finish    : Waveform.vwf.vt(63)
-#    Time: 1 us  Iteration: 0  Instance: /Lab1_vlg_vec_tst
-# End time: 18:04:42 on Sep 01,2026, Elapsed time: 0:00:01
+# ** Note: $finish    : alltests.vwf.vt(63)
+#    Time: 3200 ns  Iteration: 0  Instance: /Lab1_vlg_vec_tst
+# End time: 10:57:03 on Sep 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
